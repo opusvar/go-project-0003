@@ -13,8 +13,9 @@ func main() {
 
 	// logic to detmine if the robbers elude the guards
 	if eludedGuards >= 50 {
-		f.Println("Looks like you've managed to make it past the guards.  Good job, but remember, this is the first step.")
-		f.Println("The heist continues.")
+		f.Print("Looks like you've managed to make it past the guards. \n")  
+		f.Print("Good job, but remember, this is the first step. \n")
+		f.Print("The heist continues.\n")
 		f.Println("Still got that safe to crack... \n")
 	} else {
 		isHeistOn = false
