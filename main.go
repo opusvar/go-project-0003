@@ -32,7 +32,7 @@ func main() {
         isHeistOn = false
 		f.Println("Safecracker failed to open the vault.  You missed your shot!")
 		f.Println("The boss doesn't tolerate failure, better go on vacation.")
-    
+	} 
 	
 
 	f.Println("Heist Status:", isHeistOn)
