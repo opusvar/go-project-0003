@@ -34,6 +34,38 @@ func main() {
 		f.Println("Safecracker failed to open the vault.  You missed your shot!")
 		f.Println("The boss doesn't tolerate failure, better go on vacation.")
 	} 
+
+	leftSafely := m.Intn(5)
+
+	if isHeistOn{
+		switch leftSafely {
+		    case 0:
+				isHeistOn = false
+                f.Print("You got caught during the escape.  Heist failed")
+			case 1:
+				isHeistOn = false
+				f.Print("You packed the bags too full and couldn't carry them!")
+				f.Print("You had to leave the goods to make your escape.")
+				f.Print("Heist failed.")
+			case 2:
+				isHeistOn = false
+				f.Print("Pre-heist celebrations come back to haunt you.")
+				f.Print("Should have hydrated better. You passed out from the strain of packing the bags.")
+				f.Print("Heist failed.")
+			case 3:
+				isHeistOn = false
+				f.Print("Cheers and success! You've escaped the property.")
+				f.Print("Cheap straps on the bag broke, you had to drop the load.")
+				f.Print("Heist failed.")
+				f.Print("Still got to make that getaway.")
+			case 4:
+				f.Print("")
+
+
+
+
+		}
+	}
 	
 
 	f.Println("Heist Status:", isHeistOn)
