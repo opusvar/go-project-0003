@@ -35,7 +35,7 @@ func main() {
 		f.Println("The boss doesn't tolerate failure, better go on vacation.")
 	} 
 
-	leftSafely := m.Intn(5)
+	leftSafely := m.Intn(5) // determines which case is used for left safely
 
 	if isHeistOn{
 		switch leftSafely {
@@ -71,6 +71,8 @@ func main() {
 		}
 	} 
 	
+    // determines how much you make from the heist.
+
 	if isHeistOn {
 		amtStolen := 10000 + m.Intn(1000000)
 
@@ -78,12 +80,5 @@ func main() {
 		f.Print("Looks like you go", amtStolen)
 
 	}
-	
-
 	f.Println("Heist Status:", isHeistOn)
-
-
-
-
-
 }
