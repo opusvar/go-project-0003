@@ -57,9 +57,15 @@ func main() {
 				f.Print("Cheers and success! You've escaped the property.")
 				f.Print("Cheap straps on the bag broke, you had to drop the load.")
 				f.Print("Heist failed.")
-				f.Print("Still got to make that getaway.")
+				f.Print("Still got to make that getaway, but this time from the boss.")
 			case 4:
-				f.Print("")
+				f.Print("You made it out with the loot.  Congratulations.")
+				f.Print("Make it to the getaway car.")
+			case 5:
+				f.Print("Loot in tow, no guards in sight.")
+				f.Print("Heading to the getaway car.")
+			default:
+				f.Print("Start the getaway car!")
 
 
 
