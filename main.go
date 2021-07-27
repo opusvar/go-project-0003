@@ -44,33 +44,39 @@ func main() {
                 f.Print("You got caught during the escape.  Heist failed")
 			case 1:
 				isHeistOn = false
-				f.Print("You packed the bags too full and couldn't carry them!")
-				f.Print("You had to leave the goods to make your escape.")
-				f.Print("Heist failed.")
+				f.Println("You packed the bags too full and couldn't carry them!")
+				f.Println("You had to leave the goods to make your escape.")
+				f.Println("Heist failed.")
 			case 2:
 				isHeistOn = false
-				f.Print("Pre-heist celebrations come back to haunt you.")
-				f.Print("Should have hydrated better. You passed out from the strain of packing the bags.")
-				f.Print("Heist failed.")
+				f.Println("Pre-heist celebrations come back to haunt you.")
+				f.Println("Should have hydrated better. You passed out from the strain of packing the bags.")
+				f.Println("Heist failed.")
 			case 3:
 				isHeistOn = false
-				f.Print("Cheers and success! You've escaped the property.")
-				f.Print("Cheap straps on the bag broke, you had to drop the load.")
-				f.Print("Heist failed.")
-				f.Print("Still got to make that getaway, but this time from the boss.")
+				f.Println("Cheers and success! You've escaped the property.")
+				f.Println("Cheap straps on the bag broke, you had to drop the load. ")
+				f.Println("Heist failed.")
+				f.Println("Still got to make that getaway, but this time from the boss.")
 			case 4:
-				f.Print("You made it out with the loot.  Congratulations.")
-				f.Print("Make it to the getaway car.")
+				f.Println("You made it out with the loot.  Congratulations.")
+				f.Println("Make it to the getaway car.")
+				f.Println("Success so far... ")
 			case 5:
-				f.Print("Loot in tow, no guards in sight.")
-				f.Print("Heading to the getaway car.")
+				f.Println("Loot in tow, no guards in sight.")
+				f.Println("Heading to the getaway car.")
+				f.Println("Success so far... ")
 			default:
-				f.Print("Start the getaway car!")
-
-
-
-
+				f.Println("Start the getaway car!")
 		}
+	} 
+	
+	if isHeistOn {
+		amtStolen := 10000 + m.Intn(1000000)
+
+		f.Print("You made it to the hideout!")
+		f.Print("Looks like you go", amtStolen)
+
 	}
 	
 
